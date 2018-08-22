@@ -1,0 +1,59 @@
+
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">体重：</view>
+        <input bindinput="boxTizhongInput" class="picker_value_right"  type="digit" value="{{tizhong}}"></input>
+        <view class="picker_text_right">kg</view>
+        
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">体脂：</view>
+        <input bindinput="boxTizhiInput" class="picker_value_right"  type="digit" value="{{tizhi}}"></input>
+        <view class="picker_text_right">%</view>
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">胸围：</view>
+        <input bindinput="boxXiongweiInput" class="picker_value_right"  type="digit" value="{{xiongwei}}"></input>
+        <view class="picker_text_right">cm</view>
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">臂围：</view>
+        <input bindinput="boxBiweigInput" class="picker_value_right"  type="digit" value="{{biwei}}"></input>
+        <view class="picker_text_right">cm</view>
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">腰围：</view>
+        <input bindinput="boxYaoweiInput" class="picker_value_right"  type="digit" value="{{yaowei}}"></input>
+        <view class="picker_text_right">cm</view>
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">腿围：</view>
+        <input bindinput="boxTuiweiInput" class="picker_value_right"  type="digit" value="{{tuiwei}}"></input>
+        <view class="picker_text_right">cm</view>
+    </view>
+</view>
+<view class="container">
+    <view class="container2">
+        <view class="picker_text">臀围：</view>
+        <input bindinput="boxTunweiInput" class="picker_value_right"  type="digit" value="{{tunwei}}"></input>
+        <view class="picker_text_right">cm</view>
+    </view>
+</view>
+<form  class="button_container">
+    <button bindtap='saveData' class="savebtn" formType="submit">确认提交</button>
+</form>
+
+
+<view class="weui-footer">
+    <view class="weui-footer__text">意见反馈：summer_ness@163.com</view>
+</view>

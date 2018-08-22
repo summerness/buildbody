@@ -1,0 +1,1 @@
+<view bindtap="clearZanToast" class="toast" wx:if="{{toast.show}}">{{toast.title}}</view>

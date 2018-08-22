@@ -1,0 +1,13 @@
+
+
+<view class="container-wrap">
+
+  <view class="box-header box-mask" bindtap='JumpToTimer'>
+  <text class="title-style">计时器</text>
+  </view>
+
+  <view class='box' bindtap='JumpToRecord'>
+  <text class="title-style-white">体态记录</text>
+  </view>
+
+</view>

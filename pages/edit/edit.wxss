@@ -1,0 +1,126 @@
+page {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30rpx;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    
+}
+
+.container2 {
+    display: flex;
+    margin: 10rpx 20rpx;
+    flex: 1;
+    height: 84rpx;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 0 20rpx;
+    border: 1px solid #ececec;
+    border-radius: 4rpx;
+}
+
+.picker {
+    flex: 1;
+}
+
+.picker_text {
+    width: 168rpx;
+    margin-right: 30rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 36rpx;
+    color: #767676;
+}
+
+.picker_text_right {
+    text-align: right;
+    margin-right: 30rpx;
+    font-family: PingFangSC-Regular;
+    font-size: 36rpx;
+    color: #767676;
+}
+
+.picker_value {
+    flex: 1;
+    font-size: 36rpx;
+    text-align: center;
+}
+
+.picker_value_right {
+    flex: 1;
+    font-size: 36rpx;
+    text-align: right;
+}
+
+
+
+.box_item_image {
+    margin: 20rpx 40rpx;
+    height: 136rpx;
+    width: 200rpx;
+    border-radius: 8rpx;
+}
+
+.button_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40rpx;
+}
+
+.savebtn {
+    width: 680rpx;
+    margin: 0 30rpx;
+    height: 104rpx;
+    background: #ff9857;
+    line-height: 104rpx;
+    text-align: center;
+    color: white;
+    font-size: 32rpx;
+    border-radius: 5rpx;
+}
+
+.contact {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 30rpx;
+    text-align: center;
+}
+
+.contact_us {
+    text-decoration: underline;
+}
+
+.contact_us_hint {
+    color: #9c9992;
+    font-size: 20rpx;
+}
+
+.photoWrap {
+    margin: 10rpx 20rpx;
+    flex: 1;
+    height: 244rpx;
+    border-radius: 10rpx;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ececec;
+}
+
+button::after {
+    border: none;
+}
+
+.weui-footer{
+    position: absolute;
+    bottom: 20px;
+    color: gray;
+    font-size: 12px
+}

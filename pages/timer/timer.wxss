@@ -1,0 +1,227 @@
+@import "../../components/customPicker/index.wxss";
+
+page {
+    background: #f5f5f5;
+}
+
+.header {
+    width: 100%;
+    height: 100rpx;
+    background: white;
+    display: flex;
+}
+
+.header .item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .item .title {
+    font-size: 26rpx;
+    color: rgb(145,144,156);
+    margin-right: 20rpx;
+}
+
+.header .item .content {
+    font-size: 52rpx;
+    color: rgb(53,53,53);
+}
+
+.panContext {
+    width: 100%;
+    overflow: hidden;
+}
+
+.panWrap {
+    display: flex;
+}
+
+.pan {
+    display: flex;
+    flex-direction: row;
+    background: url('https://soccerinfo.xiaosikeji.com/resource/8su4zh3cu87.png');
+    background-size: cover;
+    width: 644rpx;
+    height: 644rpx;
+    margin: 80rpx 53rpx 60rpx;
+}
+
+.pan image {
+    width: 30rpx;
+    height: 30rpx;
+    margin-right: 8rpx;
+}
+
+.pan .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28rpx;
+    width: 112rpx;
+}
+
+.pan .ready {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: rotate(30deg);
+    width: 112rpx;
+    height: 88rpx;
+    margin: 208rpx 0 0 87rpx;
+}
+
+.pan .workout {
+    transform: rotate(-30deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 112rpx;
+    height: 88rpx;
+    margin: 208rpx 0 0 70rpx;
+}
+
+.pan .rest {
+    transform: rotate(90deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 112rpx;
+    height: 88rpx;
+    margin: 470rpx 0 0 70rpx;
+}
+
+.panWrap .pointer {
+    opacity: 0;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 100%;
+}
+
+.panWrap .pointer .image {
+    display: flex;
+    justify-content: flex-end;
+    background: url('https://soccerinfo.xiaosikeji.com/resource/u9kgzkpfavccprom2qb5wd.png') center no-repeat;
+    background-size: cover;
+    width: 373rpx;
+    height: 160rpx;
+    margin: 330rpx 84rpx 0 0;
+}
+
+.panWrap .pointer .image text {
+    color: rgb(232,70,68);
+    font-size: 28rpx;
+    margin-top: 53rpx;
+}
+
+.panWrap .pointer .image image {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 53rpx 17rpx 0 20rpx;
+}
+
+.timePan {
+    opacity: 0;
+    position: absolute;
+    left: 780rpx;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: url('https://soccerinfo.xiaosikeji.com/resource/88wvbpc2af9uyt43eczu4b.png');
+    background-size: cover;
+    width: 350rpx;
+    height: 500rpx;
+    margin: 160rpx 0 120rpx;
+    z-index: -1;
+}
+
+.timePan .pointer {
+    display: flex;
+    position: static;
+    width: 316rpx;
+    height: 280rpx;
+    margin-right: -53rpx;
+    justify-content: center;
+    align-items: center;
+}
+
+.timePan .pointer image {
+    position: absolute;
+    width: 340rpx;
+    height: 270rpx;
+}
+
+.timePan .pointer text {
+    font-size: 75rpx;
+    color: rgb(232,70,68);
+    z-index: 1;
+}
+
+.setting {
+    display: flex;
+    margin: 0 10rpx;
+}
+
+.setting .item {
+    border: Inside,1px,rgba(125,125,125,0.6);
+    border-radius: 10rpx;
+    flex: 1;
+    height: 90rpx;
+    margin: 15rpx;
+    display: flex;
+    align-items: center;
+}
+
+.setting .item .num {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    color: rgb(232,70,68);
+    font-size: 42rpx;
+}
+
+.setting .item .unit {
+    color: rgb(107,106,106);
+    font-size: 26rpx;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 -2px 8px 0 rgba(213,213,213,0.50),0 -1px 0 0 rgba(213,213,213,0.50);
+    height: 130rpx;
+    display: flex;
+    align-items: center;
+}
+
+.bottom .start {
+    background: #e84545;
+    border-radius: 44rpx;
+    flex: 1;
+    height: 88rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 88rpx;
+    text-align: center;
+    margin: 0 60rpx;
+}
+
+.bottom .pause {
+    background: #959595;
+    border-radius: 44rpx;
+    flex: 1;
+    height: 88rpx;
+    font-size: 36rpx;
+    color: #ffffff;
+    letter-spacing: 0;
+    line-height: 88rpx;
+    text-align: center;
+    margin-left: 60rpx;
+}

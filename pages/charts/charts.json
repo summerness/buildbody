@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "体态记录",
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas"
+  }
+}

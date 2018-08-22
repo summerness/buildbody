@@ -1,0 +1,19 @@
+<template name="customPicker">
+    <view class="customPicker_chooser" wx:if="{{customPicker.show}}">
+        <view bindtap="hideCustomPicker" class="customPicker_warp"></view>
+        <view bindtap="hideCustomPicker" class="hideView" hoverClass="hideViewPress">
+            <image src="../../images/icon_dropdown.png" style="width:57rpx;height:18rpx;"></image>
+        </view>
+        <picker-view bindchange="customPickerValueChange" class="customPicker_context" indicatorStyle="height:44px;" range="{{customPicker.range}}" value="{{customPicker.value}}">
+            <picker-view-column>
+                <view style="line-height: 44px" wx:for="{{customPicker.range[0]}}" wx:key="{{customPicker.range[0][customPicker.value[0]]}}">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column wx:if="{{customPicker.range[1]}}">
+                <view style="line-height: 44px" wx:for="{{customPicker.range[1]}}" wx:key="{{customPicker.range[1][customPicker.value[1]]}}">{{item}}</view>
+            </picker-view-column>
+            <picker-view-column wx:if="{{customPicker.range[2]}}">
+                <view style="line-height: 44px" wx:for="{{customPicker.range[2]}}" wx:key="{{customPicker.range[2][customPicker.value[2]]}}">{{item}}</view>
+            </picker-view-column>
+        </picker-view>
+    </view>
+</template>

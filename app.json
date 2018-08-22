@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/edit/edit",
+    "pages/charts/charts",
+    "pages/timer/timer"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#EC6969",
+    "navigationBarTitleText": "健身工具",
+    "navigationBarTextStyle": "white"
+  }
+}

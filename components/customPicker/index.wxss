@@ -1,0 +1,59 @@
+.customPicker_chooser {
+    position: fixed;
+}
+
+.customPicker_warp {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.customPicker_context {
+    width: 100%;
+    height: 528rpx;
+    background: #FFF;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hideView {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rpx;
+    background: #FFF;
+    position: fixed;
+    right: 0;
+    bottom: 528rpx;
+    left: 0;
+    border: 1px solid #F5F5F5;
+}
+
+.hideViewPress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50rpx;
+    position: fixed;
+    right: 0;
+    bottom: 528rpx;
+    left: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+.customPicker_context picker-view-column {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    line-height: 96rpx;
+}

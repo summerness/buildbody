@@ -1,0 +1,70 @@
+<NavigationBar title="训练计时器"></NavigationBar>
+<import src="/components/customPicker/index.wxml"></import>
+<getUserInfoDialog></getUserInfoDialog>
+<Toast toast="{{toast}}"></Toast>
+<view class="header">
+    <view class="item">
+        <text class="title">总时长</text>
+        <text class="content">{{totleTime}}</text>
+    </view>
+    <view class="item">
+        <text class="title">剩余时长</text>
+        <text class="content">{{remainingTime}}</text>
+    </view>
+</view>
+<view class="panContext">
+    <view animation="{{panAnimationData}}" class="panWrap">
+        <view animation="{{statusPanAmimationData}}" class="pan">
+            <view animation="{{textPanAnimationData}}" bindtap="changeReady" class="ready">
+                <view class="item">
+                    <image src="../../images/7pvbwb8a2dmms4kp9v61h.png"></image>
+          准备
+        </view>
+                <text>{{readyTime}}</text>
+            </view>
+            <view animation="{{textPanAnimationData}}" bindtap="changeRest" class="rest">
+                <view class="item">
+                    <image src="../../images/qy5d2a98kynnxvhtdrunsq.png"></image>
+          休息
+        </view>
+                <text>{{restTime}}</text>
+            </view>
+            <view animation="{{textPanAnimationData}}" bindtap="changeWorkout" class="workout">
+                <view class="item">
+                    <image src="../../images/m5nc7w3gkqh74eibswnavc.png"></image>  
+          训练
+        </view>
+                <text>{{workoutTime}}</text>
+            </view>
+        </view>
+        <view animation="{{timePanAnimationData}}" class="pointer" wx:if="{{status!=STATUS.INITIALIZE}}">
+            <view class="image">
+                <text>{{runtime==RUNTIME.REST?'休息时间':runtime==RUNTIME.WORKOUT?'训练时间':'准备时间'}}</text>
+                <image src="{{runtime==RUNTIME.REST?'../../images/idx7bzzmukn.png':runtime==RUNTIME.WORKOUT?'../../images/bvpe0mkyqyj.png':'../../images/u9f5vl6vyf.png'}}"></image>
+            </view>
+        </view>
+        <view animation="{{timePanAnimationData}}" class="timePan">
+            <view animation="{{timePanAnimationData}}" class="pointer">
+                <image animation="{{countdownAnimationData}}" src="../../images/srqg6zoc1t.png"></image>
+                <text>{{curCountdown}}</text>
+            </view>
+        </view>
+    </view>
+</view>
+<view class="setting">
+    <button bindtap="changeWheel" class="item">
+        <text class="unit" wx:if="{{status!=STATUS.INITIALIZE}}">剩</text>
+        <text class="num">{{wheel}}</text>
+        <text class="unit">轮</text>
+    </button>
+    <button bindtap="changeGroup" class="item">
+        <text class="unit" wx:if="{{status!=STATUS.INITIALIZE}}">剩</text>
+        <text class="num">{{group}}</text>
+        <text class="unit">组</text>
+    </button>
+</view>
+<view class="bottom">
+    <button bindtap="pause" class="pause" wx:if="{{status!=STATUS.INITIALIZE}}">{{status==STATUS.PAUSED?'恢复':'暂停'}}</button>
+    <button bindtap="start" class="start">{{status==STATUS.INITIALIZE?'开始':'停止'}}</button>
+</view>
+<template is="customPicker" data="{{customPicker:customPicker}}"></template>

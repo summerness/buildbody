@@ -1,0 +1,28 @@
+<!--pages/charts/charts.wxml-->
+<cover-view class="round-click"  bindtap='JumpToEdit'>
+  <cover-view class ='round-clicktext'>添加</cover-view>
+</cover-view>
+
+
+<view class='container'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ tizhong }}"></ec-canvas>
+</view>
+<view class='container1'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ tizhi }}" ></ec-canvas>
+</view>
+<view class='container2'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ xiongwei }}"></ec-canvas>
+</view>
+<view class='container3'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ biwei }}"></ec-canvas>
+</view>
+<view class='container4'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ yaowei }}"></ec-canvas>
+</view>
+<view class='container5'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ tuiwei }}"></ec-canvas>
+</view>
+<view class='container6'>
+     <ec-canvas  id="mychart-dom-line" canvas-id="mychart-line" ec="{{ tunwei }}"></ec-canvas>
+</view>
+

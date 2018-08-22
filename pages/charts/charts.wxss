@@ -1,0 +1,145 @@
+page {
+    background: #fafafa;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30rpx;
+}
+.bannerImage {
+    box-shadow: 1px 1px 20rpx 0 #e28986;
+    margin-bottom: 10rpx;
+    border-radius: 10rpx;
+}
+
+ec-canvas {
+  width: 100%;
+  height: 100%;
+  
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background: #ffff;
+  
+} 
+
+.container1 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:45%;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+  background: #ffff
+} 
+
+.container2 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:87.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+  background: #ffff
+} 
+
+.container3 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:130%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+  background: #ffff
+} 
+
+.container4 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:172.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  
+  background:  #ffff
+} 
+
+.container5 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:215%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+ 
+  background: #ffff
+} 
+
+.container6 {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  top:257.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+ 
+  background: #ffff
+} 
+
+.round-click{
+    height: 60px;
+    width: 60px;
+    background-color: #fd7b7b;
+    border-radius: 100%;
+    position: fixed;
+    bottom: 150rpx;
+    right: 20rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    
+}
+.round-clicktext{
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+}
+
+.cover{
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  
+  z-index: 9999;
+}
